@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Detección de Vulnerabilidades</title>
+    <!-- Vinculación al archivo CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Encabezado de la plataforma -->
+    <header>
+        <div class="logo">
+            <h1>Plataforma de Seguridad</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#reportes">Reportes</a></li>
+                <li><a href="#configuracion">Configuración</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección principal -->
+    <main>
+        <!-- Dashboard -->
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+            <div class="alertas">
+                <h3>Alertas de Seguridad</h3>
+                <ul>
+                    <li>Vulnerabilidad crítica detectada en el tráfico de red</li>
+                    <li>Posible intento de ataque en la capa 2</li>
+                </ul>
+            </div>
+
+            <div class="estadisticas">
+                <h3>Estadísticas del Sistema</h3>
+                <div>
+                    <p><strong>Vulnerabilidades detectadas:</strong> 34</p>
+                    <p><strong>Tiempo de respuesta promedio:</strong> 2.5 segundos</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reportes -->
+        <section id="reportes">
+            <h2>Reportes</h2>
+            <button onclick="generarReporte()">Generar reporte</button>
+        </section>
+
+        <!-- Configuración -->
+        <section id="configuracion">
+            <h2>Configuración</h2>
+            <form>
+                <label for="umbral">Umbral de Alerta de Seguridad</label>
+                <input type="number" id="umbral" name="umbral" min="1" max="10" step="1">
+                <button type="submit">Guardar Configuración</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Plataforma de Seguridad - Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Vinculación al archivo JS -->
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
+

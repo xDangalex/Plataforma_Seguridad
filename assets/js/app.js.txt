@@ -1,0 +1,13 @@
+// app.js
+
+// Función para generar un reporte
+function generarReporte() {
+    alert("Generando reporte de vulnerabilidades...");
+}
+
+// Función para manejar la configuración de alertas
+document.querySelector("form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    let umbral = document.querySelector("#umbral").value;
+    alert("Configuración guardada: Umbral de alerta establecido en " + umbral);
+});
